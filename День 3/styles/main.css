@@ -1,9 +1,9 @@
-* {
+* { /*обнуление отступов у всей страницы*/
   padding: 0;
   margin: 0;
 }
 
-@font-face {
+@font-face { /*привязал два шрифта*/
   font-family: "beer";
   src: url("../fonts/beer\ money.ttf");
 }
@@ -13,34 +13,13 @@
   src: url("../fonts/Bicubik.OTF");
 }
 
-
-footer {
+footer { /*стиль для блока с подвалом*/
   background-color: #d22a37;
   width: 100%;
   height: 10vh;
-  
-  margin:0 auto;
-}
-
-.head li {
-  justify-content: center;
-  align-items: center;
-  float: left;
-  display: flex;
-}
-
-.head a {
-  margin-left: 1vw;
-  margin-top: 3vh;
-  padding: 1vw;
-  font-size: 4vh;
-  color: black;
-  text-decoration: none;
-}
-
-
-
-.parallax .bg_one,
+  margin: 0 auto;
+} 
+.parallax .bg_one, /*настраивал блок с паралаксом, чтобы две картинки при скролле - прокруте страницы, накладывались друг на друга*/
 .bg_two {
   z-index: -1;
   position: relative;
@@ -50,38 +29,35 @@ footer {
   background-size: cover;
 }
 
-.parallax .bg_one {
+.parallax .bg_one { /*первый фон*/
   z-index: 0;
   background-image: url(../images/lolbg.jpg);
 }
-.parallax .bg_two {
+.parallax .bg_two { /*второй фон*/
   z-index: 0;
   background-image: url(../images/val.jpeg);
 }
 
-.content {
-  position: relative;
-}
 
 .lol,
-.val {
+.val { /*расположение блоков на странице*/
   display: flex;
   flex-direction: row;
 }
 
-.lol .pict {
+.lol .pict { /*ширина блока с картинкой*/
   width: 30%;
   position: relative;
 }
 
-.lol .pict img {
+.lol .pict img { /*ширина картинки относительно блока*/
   width: 30vw;
   margin-top: 8vh;
   padding-left: 1vw;
   position: relative;
 }
 
-.lolv {
+.lolv { /*блок с видео*/
   margin-top: 10vh;
   padding-right: 0;
   position: relative;
@@ -91,8 +67,8 @@ footer {
   width: 70%;
 }
 
-.lolv video {
-  height: fit-content;
+.lolv video { /*само видео*/
+  height: fit-content; /*это чтобы блок под размеры видоса подравнялся*/
   margin-top: 10vh;
   margin-left: 2vw;
   position: relative;
@@ -100,20 +76,17 @@ footer {
   display: flex;
   flex-direction: row;
   width: 60vw;
-  box-shadow: 0 0px 12px rgba(151, 7, 7, 0.7), 0 0px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 12px rgba(151, 7, 7, 0.7), 0 0px 20px rgba(0, 0, 0, 0.2); /*тень у блока с видео*/
 }
 
-
-
-.val .pict img {
+.val .pict img { /*картинка у нижнего блока*/
   width: 28vw;
   margin-top: 5vh;
   padding-left: 1vw;
   position: relative;
-  
 }
 
-.valv {
+.valv { /*блок второй снизу*/
   margin-top: 10vh;
   padding-right: 0;
   position: relative;
@@ -122,7 +95,7 @@ footer {
   width: 70%;
 }
 
-.valv video {
+.valv video { /*блок с видосом снизу*/
   height: fit-content;
   margin-top: 14vh;
   margin-left: 2vw;
@@ -131,21 +104,19 @@ footer {
   display: flex;
   width: 90%;
   overflow: hidden;
-  box-shadow: 0 0px 12px rgba(151, 7, 7, 0.7), 0 0px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 12px rgba(151, 7, 7, 0.7), 0 0px 20px rgba(0, 0, 0, 0.2); /*тень для блока с видео*/
 }
 
-.zag h1 {
+.zag h1 { /*стиль для заголовка*/
   background: none;
   z-index: 10000;
   font-size: 5vh;
-  
   font-family: "bicubik";
   text-align: center;
   color: #d22a37;
 }
 
-
-.header  {
+.header { /*стиль для блока шапки*/
   z-index: 1;
   width: 100%;
   height: 15vh;
@@ -154,12 +125,7 @@ footer {
   opacity: 0.9;
 }
 
-.logo img {
-  width: 15vh;
-  position: relative;
-  left: 5vh;
-}
-.menu {
+.menu { /*тут расположение объектов в меню настраивал*/
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -168,32 +134,32 @@ footer {
   float: right;
 }
 
-.content h1 {
+.content h1 { /*стиль для заголовка в блоке content*/
   font-size: 5vh;
-    margin-top: 10vh;    
-    font-family: "bicubik";
-    text-align: center;
-    color: #d22a37;
-  }
-  
-  .content h1:hover {
-      color: black;
-    }
-  
-  .content p {
-      border-bottom: 1px solid black;
-      margin-bottom: 1vh;
-    margin-left: 10%;
-    max-width: 80%;
-    padding-top: 5vh;
-    align-items: center;
-    font-family: "bicubik";
-    text-align: justify;
-    font-size: 3vh;
-  }
+  margin-top: 10vh;
+  font-family: "bicubik";
+  text-align: center;
+  color: #d22a37;
+}
 
-.menu a {
-  text-decoration: none;
+.content h1:hover { /*смена цвета при наведении на заголовок*/
+  color: black;
+}
+
+.content p { /*стиль для текста*/
+  border-bottom: 1px solid black;
+  margin-bottom: 1vh;
+  margin-left: 10%;
+  max-width: 80%;
+  padding-top: 5vh;
+  align-items: center;
+  font-family: "bicubik";
+  text-align: justify;
+  font-size: 3vh;
+}
+
+.menu a { /*стиль для ссылок в меню*/
+  text-decoration: none; /*убрал подчеркивание ссылок*/
   display: block;
   position: relative;
   line-height: 6.1vh;
@@ -204,27 +170,26 @@ footer {
   font-family: "beer";
   font-weight: bold;
   color: black;
-  transition:.3s linear;
+  transition: 0.3s linear; /*плавность анимации смены цвета*/
   top: 4vh;
-} 
-.menu a:hover {
+}
+.menu a:hover { /*при наведении на ссылку смена цвета*/
   color: white;
 }
 
-button {
+button { /*стиль для кнопки*/
   cursor: pointer;
-  background-image: url('../images/logo.png');
+  background-image: url("../images/logo.png");
   background-size: contain;
   background-repeat: no-repeat;
-  padding-top: -15vh ;
+  padding-top: -15vh;
   width: 8vw;
   height: 15vh;
   border: none;
   background-color: #d22a37;
 }
 
-
-footer {
+footer { /*стиль для блока подвала*/
   background-color: #d22a37;
   width: 100%;
   height: 15vh;
@@ -232,9 +197,9 @@ footer {
   position: relative;
   margin: 0 auto;
 }
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"); /*библиотека стилей, отсюда иконки соц сетей брал*/
 
-.footer-distributed {
+.footer-distributed { /*блок подвала*/
   background-color: #d22a37;
   box-sizing: border-box;
   width: 100%;
@@ -243,9 +208,8 @@ footer {
   padding: 4vh 2vw;
 }
 
-/* Footer links */
 
-.footer-distributed p.footer-links {
+.footer-distributed p.footer-links { 
   font-size: 18px;
   font-weight: bold;
   color: black;
@@ -255,7 +219,7 @@ footer {
   transition: ease 0.5s;
 }
 
-.footer-distributed p.footer-links a {
+.footer-distributed p.footer-links a { /*стиль ссылок*/
   display: inline-block;
   line-height: 1.8;
   text-decoration: none;
@@ -263,19 +227,19 @@ footer {
   transition: ease 0.5s;
 }
 
-.footer-distributed p.footer-links a::after {
+.footer-distributed p.footer-links a::after { /*полосочка после текста ссылки*/
   content: " |";
 }
 
-.footer-distributed p.footer-links a:hover {
+.footer-distributed p.footer-links a:hover { /*смена цвета ссылок при наведении*/
   color: white;
 }
 
-.footer-distributed .footer-right {
+.footer-distributed .footer-right { /*расположение для блока с иконками*/
   float: right;
 }
 
-.footer-distributed .footer-right a {
+.footer-distributed .footer-right a { /*стиль ссылок*/
   display: inline-block;
   width: 3.5vw;
   height: 3.5vh;
@@ -286,22 +250,11 @@ footer {
   transition: all 0.25s;
 }
 
-.footer-distributed .footer-left img {
+.footer-distributed .footer-left img { /*подравнял логотип в подвале*/
   margin-bottom: -2vh;
 }
 
-.footer-distributed .footer-right a:hover {
+.footer-distributed .footer-right a:hover { /*при наведении меняется масштаб(scale) иконок соц сетей в подвале и они увеличиваются*/
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
-}
-
-@media (max-width: 385)  {
- .lol {
-  flex-direction: column;
- }
-
-  .zag>h1 {
-    position: absolute;
-    font-size: 1vh;
-  }
 }

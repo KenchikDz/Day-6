@@ -5,15 +5,12 @@
 
 .vid1 {
   position: absolute;
-  top: 30vh
+  top: 30vh;
 }
 .vid2 {
   position: absolute;
-  top: 40vh
+  top: 40vh;
 }
-
-
-
 
 @font-face {
   font-family: "beer";
@@ -25,66 +22,44 @@
   src: url("../fonts/Bicubik.OTF");
 }
 
-
-button {
-  cursor: pointer;
-  background-image: url('../images/logo.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding-top: -15vh ;
-  width: 8vw;
-  height: 15vh;
-  border: none;
-  background-color: #d22a37;
-}
-
-footer {
-  background-color: #d22a37;
-  width: 100%;
-  height: 15vh;
-  bottom: 0;
-  position: relative;
-  margin: 0 auto;
-}
-
-.head li, .head img {
+.head li,
+.head img {
   justify-content: center;
   align-items: center;
   float: left;
   display: flex;
 }
 
-
-
 .content {
   position: relative;
 }
 
-.lolv h1, .valv h1 {
-    text-align: center;
+.lolv h1,
+.valv h1 {
+  text-align: center;
 }
 
 .lol,
 .val {
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
 }
 
 .pict img {
-    width: 50vw;
+  width: 50vw;
 }
 
 .lol,
 .val {
-    padding: 1vh 1vh 1vh 1vh;
-  
+  padding: 1vh 1vh 1vh 1vh;
+
   position: relative;
 }
 
 .lolv,
 .valv {
-    padding: 1vh 1vh 1vh 1vh;
-    font-family: "bicubik";  
+  padding: 1vh 1vh 1vh 1vh;
+  font-family: "bicubik";
   position: relative;
   float: right;
   display: flex;
@@ -96,20 +71,22 @@ footer {
   font-size: 2vh;
 }
 
-.lolv, .valv {
-    margin-left: 1vh;
-    background-color: black;
-    opacity: 0.9;
+.lolv,
+.valv {
+  margin-left: 1vh;
+  background-color: black;
+  opacity: 0.9;
 }
 
 .menu li img {
-    display: none;
+  display: none;
 }
 
 .menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  /*расположение блоков в меню*/
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .header {
@@ -127,16 +104,17 @@ footer {
   left: 5vh;
 }
 .menu {
+  display: flex;
+  flex-direction: row;
   list-style: none;
   margin: 0;
   padding: 0;
   float: right;
 }
-.menu li {
-  display: inline-block;
-}
+
 .menu a {
-  text-decoration: none;
+  /*стиль для ссылок в меню*/
+  text-decoration: none; /*убрал подчеркивание ссылок*/
   display: block;
   position: relative;
   line-height: 6.1vh;
@@ -147,17 +125,42 @@ footer {
   font-family: "beer";
   font-weight: bold;
   color: black;
-  transition: 0.3s linear;
+  transition: 0.3s linear; /*плавность анимации смены цвета*/
   top: 4vh;
 }
 
 .menu a:hover {
+  /*при наведении на ссылку смена цвета*/
   color: white;
 }
 
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+button {
+  /*стиль для кнопки*/
+  cursor: pointer;
+  background-image: url("../images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: -15vh;
+  width: 8vw;
+  height: 15vh;
+  border: none;
+  background-color: #d22a37;
+}
+
+footer {
+  /*стиль для блока подвала*/
+  background-color: #d22a37;
+  width: 100%;
+  height: 15vh;
+  bottom: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"); /*библиотека стилей, отсюда иконки соц сетей брал*/
 
 .footer-distributed {
+  /*блок подвала*/
   background-color: #d22a37;
   box-sizing: border-box;
   width: 100%;
@@ -165,8 +168,6 @@ footer {
   text-align: left;
   padding: 4vh 2vw;
 }
-
-/* Footer links */
 
 .footer-distributed p.footer-links {
   font-size: 18px;
@@ -179,6 +180,7 @@ footer {
 }
 
 .footer-distributed p.footer-links a {
+  /*стиль ссылок*/
   display: inline-block;
   line-height: 1.8;
   text-decoration: none;
@@ -187,18 +189,22 @@ footer {
 }
 
 .footer-distributed p.footer-links a::after {
+  /*полосочка после текста ссылки*/
   content: " |";
 }
 
 .footer-distributed p.footer-links a:hover {
+  /*смена цвета ссылок при наведении*/
   color: white;
 }
 
 .footer-distributed .footer-right {
+  /*расположение для блока с иконками*/
   float: right;
 }
 
 .footer-distributed .footer-right a {
+  /*стиль ссылок*/
   display: inline-block;
   width: 3.5vw;
   height: 3.5vh;
@@ -210,10 +216,12 @@ footer {
 }
 
 .footer-distributed .footer-left img {
+  /*подравнял логотип в подвале*/
   margin-bottom: -2vh;
 }
 
 .footer-distributed .footer-right a:hover {
+  /*при наведении меняется масштаб(scale) иконок соц сетей в подвале и они увеличиваются*/
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
 }
