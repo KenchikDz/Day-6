@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "beer";
+  src: url("../fonts/beer\ money.ttf");
+}
+
+@font-face {
+  font-family: "bicubik";
+  src: url("../fonts/Bicubik.OTF");
+}
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+footer {
+  background-color: #d22a37;
+  width: 100%;
+  height: 15vh;
+  bottom: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+.head li,
+.head img {
+  justify-content: center;
+  align-items: center;
+  float: left;
+  display: flex;
+}
+
+.menu li img {
+  display: none;
+}
+
+@media (max-width: 1130px) {
+  .menu li .texts {
+    display: none;
+  }
+  .menu li img {
+    width: 5vw;
+    display: block;
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header {
+  z-index: 1;
+  width: 100%;
+  height: 15vh;
+  font-family: "beer";
+  background-color: #d22a37;
+  opacity: 0.9;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.menu li {
+  display: inline-block;
+}
+.menu a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 6.1vh;
+  padding-left: 2vh;
+  right: 5vh;
+  font-size: 3vh;
+  letter-spacing: 0.1vh;
+  font-family: "beer";
+  font-weight: bold;
+  color: black;
+  transition: 0.3s linear;
+  top: 4vh;
+}
+
+button {
+  cursor: pointer;
+  background-image: url("../images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-top: -15vh;
+  width: 8vw;
+  height: 15vh;
+  border: none;
+  background-color: #d22a37;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+.nesolestag-enadenud > h3 {
+  font-size: 5vh;
+  text-align: center;
+  font-family: "bicubik";
+}
+
+.nesolestag-enadenud {
+  position: absolute;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.tripple {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  line-height: 22vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 9vh;
+}
+
+.vipad:hover .vipbl {
+  transform: translateX(50%);
+  transition: all 0.4s ease;
+}
+
+.footer-distributed {
+  background-color: #d22a37;
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  text-align: left;
+  padding: 4vh 2vw;
+}
+
+/* Footer links */
+
+.footer-distributed p.footer-links {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  font-family: "bicubik";
+  margin: 0 0 10px;
+  padding: 0;
+  transition: ease 0.5s;
+}
+
+.footer-distributed p.footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+  transition: ease 0.5s;
+}
+
+.footer-distributed p.footer-links a::after {
+  content: " |";
+}
+
+.footer-distributed p.footer-links a:hover {
+  color: white;
+}
+
+.footer-distributed .footer-right {
+  float: right;
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 3.5vw;
+  height: 3.5vh;
+  font-size: 4vh;
+  color: #ffffff;
+  text-align: center;
+  margin-left: 3px;
+  transition: all 0.25s;
+}
+
+.footer-distributed .footer-left img {
+  margin-bottom: -2vh;
+}
+
+.footer-distributed .footer-right a:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
